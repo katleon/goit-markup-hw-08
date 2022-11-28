@@ -1,0 +1,28 @@
+.client {
+    text-align: center;
+}
+.client__title {
+    margin-bottom: 50px;
+}
+.client__list {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 50px;
+    gap: 30px;
+}
+.client__icon {
+    width: 170px;
+    height: 92px;
+    fill: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: var(--transition-time);
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        fill: var(--brand-color);
+        border: 1px solid var(--brand-color);
+    }
+}

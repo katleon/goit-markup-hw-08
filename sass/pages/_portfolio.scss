@@ -1,0 +1,98 @@
+.portfolio__buttons {
+    padding-bottom: 0;
+}
+.portfolio__btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.portfolio__btn {
+    cursor: pointer;
+    border: 0;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: var(--important-font-size);
+    letter-spacing: 0.03em;
+    line-height: 1.62;
+    text-align: center;
+    color: inherit;
+    background-color: #f5f4fa;
+    padding: 6px 22px;
+    border-radius: 4px;
+    transition: var(--transition-time);
+
+    &:hover,
+    &:focus {
+        color: var(--additional-color);
+        background-color: var(--brand-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+.gallery {
+    padding-top: 50px;
+}
+.gallery-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc -177px;
+}
+.gallery-list__item {
+    width: 370px;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+.gallery-list__item:hover .project__overlay {
+    transform: translatey(0);
+}
+.project__name {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    line-height: 2;
+    color: inherit;
+    padding-left: 24px;
+    padding-bottom: 4px;
+}
+.project__type {
+    font-family: inherit;
+    font-size: var(--important-font-size);
+    line-height: 1.87;
+    color: var(--description-color);
+    padding-left: 24px;
+}
+.project {
+    position: relative;
+    overflow: hidden;
+}
+.project__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2196f3e5;
+    transform: translatey(100%);
+    transition: transform var(--transition-time);
+}
+.procjet__description {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1, 44;
+    letter-spacing: 0.03em;
+    padding: 49px 45px 49px 24px;
+    color: var(--additional-color);
+}
+.project__photo {
+    display: block;
+}
+.project__border {
+    border: 1px solid #eeeeee;
+}
