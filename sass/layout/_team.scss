@@ -1,65 +1,84 @@
 .team {
-    text-align: center;
-    background-color: #f5f4fa;
+  background-color: #f5f4fa;
 }
+
 .team__title {
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
+
 .team__list {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
+
 .team__list-item {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--additional-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--additional-color);
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
+
 .team__name {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: var(--important-font-size);
-    letter-spacing: 0.03em;
-    line-height: 1.18;
-    color: inherit;
-    margin-top: 30px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--important-font-size);
+  letter-spacing: 0.03em;
+  line-height: 1.18;
+  color: inherit;
+  margin-top: 30px;
 }
+
 .team__profession {
-    font-family: inherit;
-    font-size: var(--important-font-size);
-    letter-spacing: 0.03em;
-    line-height: 1.18;
-    color: var(--description-color);
+  font-family: inherit;
+  font-size: var(--important-font-size);
+  letter-spacing: 0.03em;
+  line-height: 1.18;
+  color: var(--description-color);
 }
 
 .team__social-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
 }
-.team__social-item {
-    width: 44px;
-    height: 44px;
-    margin-bottom: 30px;
-}
-.team__social-link {
-    display: block;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: #afb1b8;
-    background-color: #ffffff;
-    transition: var(--transition-time);
 
-    &:hover,
-    &:focus {
-        color: var(--additional-color);
-        background-color: var(--brand-color);
-    }
+.team__social-item {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 30px;
+}
+
+.team__social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: #ffffff;
+  transition: var(--transition-time);
+
+  &:hover,
+  &:focus {
+    color: var(--additional-color);
+    background-color: var(--brand-color);
+  }
 }
 
 .team__social-icon {
-    margin: 12px 12px;
-    fill: currentColor;
+  margin: 12px 12px;
+  fill: currentColor;
 }

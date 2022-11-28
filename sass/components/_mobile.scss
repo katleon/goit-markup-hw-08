@@ -1,0 +1,124 @@
+.menu-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--brand-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--additional-color);
+  top: 0;
+  right: 0;
+  padding: 15px 10px 48px 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--brand-color);
+  }
+}
+
+.mobile-menu__list-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-menu__link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: inherit;
+
+  &:focus,
+  &:hover {
+    color: var(--brand-color);
+  }
+
+  &--current {
+    color: var(--brand-color);
+  }
+}
+
+.mobile-menu__contact-link {
+  display: block;
+  margin-bottom: 32px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--description-color);
+}
+
+.mobile-menu__contact-link:last-of-type {
+  font-size: 24px;
+}
+
+.mobile-menu__social-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.mobile-menu__social-item {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: var(--brand-color);
+
+  &:not(:first-child)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}
